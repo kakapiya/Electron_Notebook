@@ -1,0 +1,19 @@
+{
+  "name": "exp_01",
+  "version": "1.0.0",
+  "description": "electron prictice",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kakapiya/Electron_Notebook.git"
+  },
+  "author": "geer88f",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kakapiya/Electron_Notebook/issues"
+  },
+  "homepage": "https://github.com/kakapiya/Electron_Notebook#readme"
+}
