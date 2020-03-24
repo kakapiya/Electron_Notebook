@@ -24,12 +24,8 @@ function createWindow () {
 app.whenReady().then(createWindow)
 
 
+
 //2.处理窗口关闭事件、在macOS用户点击dock上图标时重建窗口
-
-
-// 部分 API 在 ready 事件触发后才能使用。
-app.whenReady().then(createWindow)
-
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
   // 在 macOS 上，除非用户用 Cmd + Q 确定地退出，
