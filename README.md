@@ -43,10 +43,14 @@ cnpm install --save-dev electron
 }
 ```
 
+## 通知栏以及断网判断
+
 
 
 ```js
-const EventEmitter = require('events');
+addEventLinster('online',()=>{
+console.log('online')
+})
 ```
 
 
@@ -65,3 +69,8 @@ const EventEmitter = require('events');
 
 ## 3 打开重复窗口
 
+多复制了一行
+
+## 4 断网不被检测
+
+暂时无法解决
