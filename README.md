@@ -8,8 +8,15 @@
 
 
 
-## [打造你的第一个 Electron 应用](https://www.electronjs.org/docs/tutorial/first-app#打造你的第一个-electron-应用)、
+## [打造你的第一个 Electron 应用](https://www.electronjs.org/docs/tutorial/first-app#打造你的第一个-electron-应用)
 
+```
 npm init
+```
 
+开发依赖项安装
+
+```
+cnpm install --save-dev electron
+```
 
