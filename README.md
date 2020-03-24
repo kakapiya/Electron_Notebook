@@ -55,22 +55,11 @@ console.log('online')
 
 
 
-# BUG记录
+## [菜单项](https://www.electronjs.org/docs/api/menu-item#菜单项)
 
-## 1 npm ERR! missing script: start
+注意是对象数组
 
-结果是路径错了，本该放在package.js的路径下敲npm start，结果在根目录下敲了
 
-## 2 Attribute 'runtimeExecutable' does not exist
 
-以为还是路径错了，就修改了一下launch.js
 
-但是，改了又是另一个错误，最后只好把app文件夹删除，把库文件，main.js之类的文件放到根目录下，最后解决了，难道vscode的调试文件只能在根目录放着么？
 
-## 3 打开重复窗口
-
-多复制了一行
-
-## 4 断网不被检测
-
-暂时无法解决

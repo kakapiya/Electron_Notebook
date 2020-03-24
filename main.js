@@ -1,7 +1,8 @@
 const electron = require('electron')
 
 //1.将在应用程序准备就绪后打开一个窗并且打开开发者工具
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow,Menu} = require('electron')
+
 
 function createWindow () {   
   // 创建浏览器窗口
@@ -20,6 +21,7 @@ function createWindow () {
  // 打开开发者工具
  win.webContents.openDevTools()
 }
+
 
 app.whenReady().then(createWindow)
 
