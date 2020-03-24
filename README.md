@@ -20,3 +20,8 @@ npm init
 cnpm install --save-dev electron
 ```
 
+# BUG记录
+
+## 1 npm ERR! missing script: start
+
+结果是路径错了，本该放在package.js的路径下敲npm start，结果在根目录下敲了
