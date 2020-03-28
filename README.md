@@ -61,5 +61,24 @@ console.log('online')
 
 
 
+## [原生文件拖放](https://www.electronjs.org/docs/tutorial/native-file-drag-drop#原生文件拖放)
 
 
+
+我发现了一个严峻的事实，没有视频的帮助我什么都做不出来。文档中包含的内容太少了，这些例子完全不能直接使用，没有源代码我也就不懂怎么分析这些API之间的使用逻辑
+
+```
+ipcRenderer.send('ondragstart', '/path/to/item')
+```
+
+这句代码怎么也看不懂原因是，作为一个功能流程图，在没看到api文档前并不能直接使用，还需要继续去查，吐血了。
+
+我觉得这东西完全应该放在api之后。
+
+
+
+
+
+
+
+ 

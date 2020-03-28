@@ -1,7 +1,7 @@
 const electron = require('electron')
 
 //1.将在应用程序准备就绪后打开一个窗并且打开开发者工具
-const { app, BrowserWindow,Menu} = require('electron')
+const { app, BrowserWindow,Menu,ipcMain} = require('electron')
 
 
 function createWindow () {   
@@ -15,7 +15,7 @@ function createWindow () {
   })
 
   // 加载index.html文件
-  win.loadFile('index.html')
+  win.loadFile('./index.html')
 
   
  // 打开开发者工具
@@ -26,6 +26,12 @@ function createWindow () {
 app.whenReady().then(createWindow)
 
 
+ipcMain.on('ondragstart', (event, filePath) => {
+  event.sender.startDrag({
+    file: filePath,
+    icon: '/path/to/icon.png'
+  })
+})
 
 //2.处理窗口关闭事件、在macOS用户点击dock上图标时重建窗口
 // Quit when all windows are closed.
@@ -47,3 +53,5 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. 也可以拆分成几个文件，然后用 require 导入。
+
+
